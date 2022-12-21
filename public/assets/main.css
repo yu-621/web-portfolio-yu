@@ -105,3 +105,159 @@ a:hover {
   font-size: 0.875rem;
 }
 /* ===== FOOTER END ===== */
+
+/* ===== CARD COMMON BEGIN ===== */
+.card-cover {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.56);
+  box-sizing: border-box;
+  position: relative;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1001px) {
+  .card-cover {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}
+.card-title-cover {
+  margin: 0 0 0 16px;
+  display: inline-block;
+  padding: 8px 16px;
+  position: relative;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  min-width: 100px;
+  z-index: 1;
+}
+.card-title-cover::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 4px;
+  right: -4px;
+  bottom: -4px;
+  left: 4px;
+}
+.card-title {
+  font-family: "Pacifico", Roboto, "Noto Sans JP", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+.card-subtitle {
+  font-size: 0.7rem;
+  line-height: 2em;
+}
+.card-title-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 4px;
+}
+.card-contents {
+  padding: 16px;
+  font-size: 0.875rem;
+}
+/* ===== CARD COMMOM END ===== */
+
+/* ===== CARD | SELF-INTRODUCTION BIGIN ===== */
+.card-basic-info-layout {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 500px) {
+  .card-basic-info-layout {
+    flex-direction: row-reverse;
+  }
+}
+.my-photo {
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.7);
+  max-width: 120px;
+  padding: 4px;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+  .my-photo {
+    margin: 16px auto;
+  }
+}
+@media screen and (min-width: 500px) {
+  .my-photo {
+    margin: 0 16px;
+  }
+}
+.card-basic-info-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px;
+}
+/* ===== CARD | SELF=INTRODUCTION END ===== */
+
+/* ===== CARD | HOBBY BEGIN ===== */
+.swiper-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.swiper-slide {
+  background-color: #212121;
+}
+.swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide .swiper-title {
+  margin-top: 4px;
+  position: absolute;
+  line-height: 1.5em;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #00000080;
+  color: #ffffffdd;
+  padding: 0 0.5em;
+}
+/* ===== CARD | HOBBY END ===== */
+
+/* ===== CARD | SKILL BEGIN ===== */
+.tile-grid-cover {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+}
+@media screen and (max-width: 699px) {
+  .tile-grid-cover {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 700px) {
+  .tile-grid-cover {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.card-tile {
+  border: 1px solid #cccccc;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+.card-tile-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  color: #5d4037;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.card-tile-text {
+  color: #5f574f;
+  text-align: justify;
+}
+/* ===== CARD | SKILL END ===== */

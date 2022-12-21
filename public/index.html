@@ -7,6 +7,10 @@
     <meta name="robots" content="noindex" />
     <title>Yu's Portfolio</title>
     <link rel="stylesheet" href="./assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <img
@@ -22,6 +26,197 @@
     <div class="page-cover bg-3 text-dark">
       <h1 class="page-title text-1">Portfolio</h1>
 
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">English Title</div>
+          <div class="card-subtitle">日本語タイトル</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-title-line">内容</div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Self-Introduction</div>
+          <div class="card-subtitle">自己紹介</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <div class="card-basic-info-layout">
+            <div>
+              <img src="./assets/me.png" alt="顔写真" class="my-photo" />
+            </div>
+            <div style="flex-grow: 1">
+              <div style="display: flex; gap: 1em; align-items: flex-end">
+                <h3 style="margin: 0; font-size: 2em">星川ユウ</h3>
+                <span style="padding-bottom: 4px">ほしかわ ゆう</span>
+              </div>
+              <div class="bg-2" style="height: 2px"></div>
+              <div class="text-2" style="font-size: 0.95rem">Yu Hoshikawa</div>
+
+              <div
+                class="text-1"
+                style="display: flex; gap: 0.5em; align-items: center"
+              >
+                <img src="./assets/icon/email.svg" alt="Email のアイコン" />
+                <span>yu-621 [at] yu6021h11@icloud.com</span>
+              </div>
+
+              <div>岐阜大学 自然科学技術研究科 知能理工学専攻 1年生</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-contents">
+          <span class="card-basic-info-label bg-1 text-light">自己紹介</span>
+          <p>
+            　初めまして、星川ユウ
+            といいます。このサイトでは、私の趣味やスキルなどを紹介するポートフォリオです。
+            このポートフォリオが、Webの初めての制作物です。どうぞご覧ください。
+          </p>
+          <span class="card-basic-info-label cg-1 text-light">重要</span>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Hobby</div>
+          <div class="card-subtitle">趣味</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          　旅行と写真を取ることが趣味です。スマートフォンで気軽に撮影したものです。
+          パノラマ撮影が気に入っています。
+        </div>
+
+        <div
+          class="swiper-area"
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-title">静岡県 熱海市 熱海城前</div>
+              <img src="./assets/photos/1.jpg" alt="静岡県 熱海市 熱海城前" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">夕方の大学</div>
+              <img
+                src="./assets/photos/2.jpg"
+                alt="夕方の大学"
+                style="width: auto"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">高知県 四万十川 沈下橋</div>
+              <img src="./assets/photos/3.jpg" alt="高知県 四万十川 沈下橋" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">石川県 能登半島 聖域の岬</div>
+              <img src="./assets/photos/4.jpg" alt="石川県 能登半島 聖域の岬" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">長野県 軽井沢町 白糸の滝</div>
+              <img src="./assets/photos/5.jpg" alt="長野県 軽井沢町 白糸の滝" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">新潟県 糸魚川 白馬大仏前</div>
+              <img src="./assets/photos/6.jpg" alt="新潟県 糸魚川 白馬大仏前" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+      <h2 class="card-title-cover bg-2 text-light">
+        <div class="card-title">Skill</div>
+        <div class="card-subtitle">スキル</div>
+        <div class="card-title-line"></div>
+      </h2>
+      <div class="card-contents tile-grid-cover">
+        <div class="card-tile">
+          <div class="card-tile-title">
+            <img src="./assets/logos/html5.png" width="80" alt="画像" />
+            <span>HTML / CSS</span>
+            <small>1年</small>
+          </div>
+          <div class="card-tile-text">
+            　Web のフロントサイドの言語です。
+            大学の講義では習わないため、学習サイト等で学び
+            ポートフォリオサイトを作成しました。
+          </div>
+        </div>
+
+        <div class="card-tile">
+          <div class="card-tile-title">
+            <img src="./assets/logos/nodejs.svg" alt="Node.jsロゴ" width="80" />
+            <span>JavaScript / Node.js</span>
+            <small>1年</small>
+          </div>
+          <div class="card-tile-text">
+            　Web 系で最も有名な言語です。
+            フロントサイドでは、動きのある動作を作るために使用しました。 Node.js
+            は、ビルドに使用したことがあります。 TypeScript
+            も合わせて勉強しています。
+          </div>
+        </div>
+
+        <div class="card-tile">
+          <div class="card-tile-title">
+            <img src="./assets/logos/php.png" alt="PHPロゴ" />
+            <span>PHP</span>
+            <small>1年</small>
+          </div>
+          <div class="card-tile-text">
+            　Web のサーバーサイドの言語です。Laravel というフレームワークで
+            データベースを操作する、アプリケーションを制作しました。
+          </div>
+        </div>
+
+        <div class="card-tile">
+          <div class="card-tile-title">
+            <span>MySQL</span>
+            <small>1年</small>
+          </div>
+          <div class="card-tile-text">
+            　データベースです。 少しリレーションが必要な
+            クエリを使用するときに思うようにいかず、苦戦しています。 PostgreSQL
+            等の他のデータベースも挑戦しようと思っています。
+          </div>
+        </div>
+
+        <div class="card-tile">
+          <div class="card-tile-title">
+            <span>Python</span>
+            <small>1年</small>
+          </div>
+          <div class="card-tile-text">
+            　大学の講義で学習しました。 TensorFlow
+            を使った機械学習を行いました。
+          </div>
+        </div>
+
+        <div class="card-tile">
+          <div class="card-tile-title">
+            <span>Java (Android)</span>
+            <small>2年</small>
+          </div>
+          <div class="card-tile-text">
+            　大学の講義で学習しました。 自主的に Android
+            のアプリを作成したこともあります。 オブジェクト指向が難しいです。
+          </div>
+        </div>
+      </div>
+
       <div style="height: 40px"></div>
 
       <footer class="footer-cover bg-2 text-light">
@@ -29,5 +224,20 @@
         <div class="footer-contents">&copy; Yu's web page.</div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-area", {
+        direction: "horizontal",
+        spaceBetween: 30,
+        autoplay: { delay: 10 * 1000, disableOnInteraction: false },
+        loop: true,
+        pagination: { el: ".swiper-pagination" },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
