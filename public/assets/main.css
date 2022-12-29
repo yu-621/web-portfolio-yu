@@ -261,3 +261,33 @@ a:hover {
   text-align: justify;
 }
 /* ===== CARD | SKILL END ===== */
+
+/* ===== CARD | MY WORK BEGIN ===== */
+.work {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+.work-title {
+  font-weight: 500;
+}
+@media screen and (min-width: 500px) {
+  .work {
+    grid-template-columns: 1fr 2fr;
+  }
+  .work-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+.work-image img {
+  width: 100%;
+  box-shadow: 5px 5px 0 -2px #a57575;
+  border: 2px solid #e8aaa3;
+}
+.work-image video {
+  width: 100%;
+  box-shadow: 5px 5px 0 -2px #a57575;
+  border: 2px solid #e8aaa3;
+}
+/* ===== CARD | MY WORK END ===== */
