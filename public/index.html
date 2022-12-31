@@ -26,7 +26,7 @@
     <div class="page-cover bg-3 text-dark">
       <h1 class="page-title text-1">Portfolio</h1>
 
-      <div class="card-cover bg-white">
+      <!-- <div class="card-cover bg-white">
         <h2 class="card-title-cover bg-2 text-light">
           <div class="card-title">English Title</div>
           <div class="card-subtitle">日本語タイトル</div>
@@ -35,7 +35,7 @@
         <div class="card-title-line">内容</div>
       </div>
 
-      <div style="height: 20px"></div>
+      <div style="height: 20px"></div> -->
 
       <div class="card-cover bg-white">
         <h2 class="card-title-cover bg-2 text-light">
@@ -46,7 +46,7 @@
         <div class="card-contents">
           <div class="card-basic-info-layout">
             <div>
-              <img src="./assets/me.png" alt="顔写真" class="my-photo" />
+              <img src="./assets/me2.jpg" alt="顔写真" class="my-photo" />
             </div>
             <div style="flex-grow: 1">
               <div style="display: flex; gap: 1em; align-items: flex-end">
@@ -82,15 +82,27 @@
 
       <div style="height: 20px"></div>
 
-      <div class="card-cover bg-white">
+      <div class="app-bar">
+        <div class="app-bar-title">MENU</div>
+        <div class="app-bar-button-cover">
+          <button onclick="scroller('#hobby')">趣味</button>
+          <button onclick="scroller('#skill')">スキル</button>
+          <button onclick="scroller('#mywork')">制作物</button>
+          <button onclick="scroller('#licence')">帰属</button>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="hobby">
         <h2 class="card-title-cover bg-2 text-light">
           <div class="card-title">Hobby</div>
           <div class="card-subtitle">趣味</div>
           <div class="card-title-line"></div>
         </h2>
         <div class="card-contents">
-          　旅行と写真を取ることが趣味です。スマートフォンで気軽に撮影したものです。
-          パノラマ撮影が気に入っています。
+          　バスケとピアノが趣味です。2022年12月、13年ぶりにピアノの発表会に出場しました。冬季はよくスノボに行きます。
+          趣味も全力で楽しみます。
         </div>
 
         <div
@@ -102,32 +114,36 @@
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="swiper-title">静岡県 熱海市 熱海城前</div>
-              <img src="./assets/photos/1.jpg" alt="静岡県 熱海市 熱海城前" />
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-title">夕方の大学</div>
+              <div class="swiper-title">友人とバスケ</div>
               <img
-                src="./assets/photos/2.jpg"
-                alt="夕方の大学"
+                src="./assets/photos/basket.jpg"
+                alt="友人とバスケ"
                 style="width: auto"
               />
             </div>
             <div class="swiper-slide">
-              <div class="swiper-title">高知県 四万十川 沈下橋</div>
-              <img src="./assets/photos/3.jpg" alt="高知県 四万十川 沈下橋" />
+              <div class="swiper-title">ピアノ発表会</div>
+              <img
+                src="./assets/photos/piano.jpg"
+                alt="ピアノ発表会"
+                style="width: auto"
+              />
             </div>
             <div class="swiper-slide">
-              <div class="swiper-title">石川県 能登半島 聖域の岬</div>
-              <img src="./assets/photos/4.jpg" alt="石川県 能登半島 聖域の岬" />
+              <div class="swiper-title">友人とスノボ1</div>
+              <img
+                src="./assets/photos/snow1.jpg"
+                alt="友人とスノボ1"
+                style="width: auto"
+              />
             </div>
             <div class="swiper-slide">
-              <div class="swiper-title">長野県 軽井沢町 白糸の滝</div>
-              <img src="./assets/photos/5.jpg" alt="長野県 軽井沢町 白糸の滝" />
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-title">新潟県 糸魚川 白馬大仏前</div>
-              <img src="./assets/photos/6.jpg" alt="新潟県 糸魚川 白馬大仏前" />
+              <div class="swiper-title">友人とスノボ2</div>
+              <img
+                src="./assets/photos/snow2.jpg"
+                alt="友人とスノボ2"
+                style="width: auto"
+              />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -138,7 +154,7 @@
 
       <div style="height: 20px"></div>
 
-      <div class="card-cover bg-white">
+      <div class="card-cover bg-white" id="skill">
         <h2 class="card-title-cover bg-2 text-light">
           <div class="card-title">Skill</div>
           <div class="card-subtitle">スキル</div>
@@ -169,10 +185,8 @@
               <small>1年</small>
             </div>
             <div class="card-tile-text">
-              　Web 系で最も有名な言語です。
-              フロントサイドでは、動きのある動作を作るために使用しました。
-              Node.js は、ビルドに使用したことがあります。 TypeScript
-              も合わせて勉強しています。
+              　フロントサイドでは、動きのある動作を作るために使用しました。
+              Node.js は、ビルドに使用したことがあります。
             </div>
           </div>
 
@@ -203,11 +217,11 @@
           <div class="card-tile">
             <div class="card-tile-title">
               <span>Python</span>
-              <small>1年</small>
+              <small>3年</small>
             </div>
             <div class="card-tile-text">
-              　大学の講義で学習しました。 TensorFlow
-              を使った機械学習を行いました。
+              　大学の講義で扱いました。現在、研究で電磁波現象をシミュレーションするプログラムの作成に
+              使用しています。
             </div>
           </div>
 
@@ -217,8 +231,10 @@
               <small>2年</small>
             </div>
             <div class="card-tile-text">
-              　大学の講義で学習しました。 自主的に Android
-              のアプリを作成したこともあります。 オブジェクト指向が難しいです。
+              　大学の講義で学習しました。
+              自主的に横スクロールアクションゲームや
+              Androidのゲームアプリを作成したこともあります。
+              オブジェクト指向が難しいです。
             </div>
           </div>
         </div>
@@ -226,7 +242,7 @@
 
       <div style="height: 20px"></div>
 
-      <div class="card-cover bg-white">
+      <div class="card-cover bg-white" id="mywork">
         <h2 class="card-title-cover bg-2 text-light">
           <div class="card-title">My Work</div>
           <div class="card-subtitle">制作物</div>
@@ -236,7 +252,7 @@
           <div class="work">
             <div class="work-title">1. ポートフォリオサイト</div>
             <div class="work-image">
-              <img src="./assets/works/work1.png" alt="ポートフォリオ" />
+              <img src="./assets/works/portfolio.png" alt="ポートフォリオ" />
             </div>
             <div class="work-text">
               <p>
@@ -401,7 +417,7 @@
 
       <div style="height: 20px"></div>
 
-      <div class="card-cover bg-white">
+      <div class="card-cover bg-white" id="licence">
         <h2 class="card-title-cover bg-2 text-light">
           <div class="card-title">Licence</div>
           <div class="card-subtitle">帰属</div>
@@ -462,6 +478,24 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      var TOP_BAR_OFFSET = 48;
+      function scroller(query) {
+        var elements = document.querySelectorAll(query);
+        if (elements.length == 0) {
+          console.error(
+            "Selected query:",
+            query,
+            "are not found on this page."
+          );
+          return;
+        }
+        var rect = elements[0].getBoundingClientRect();
+        window.scrollTo({
+          top: rect.top + window.pageYOffset - TOP_BAR_OFFSET,
+          behavior: "smooth",
+        });
+      }
     </script>
   </body>
 </html>

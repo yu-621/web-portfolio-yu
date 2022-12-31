@@ -291,3 +291,53 @@ a:hover {
   border: 2px solid #e8aaa3;
 }
 /* ===== CARD | MY WORK END ===== */
+
+/* ===== APP BAR BEGIN ===== */
+.app-bar {
+  position: sticky;
+  top: 0;
+  height: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 15;
+  background-color: #fefefe;
+  box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.56);
+  box-sizing: border-box;
+}
+.app-bar .app-bar-button-cover {
+  display: grid;
+  padding-top: calc(6px / 2);
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 0 6px;
+}
+.app-bar .app-bar-button-cover {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (min-width: 600px) {
+  .app-bar .app-bar-button-cover {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.app-bar .app-bar-title {
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg) translateX(-50%)
+    translateY(calc(50% + 2px));
+  font-size: 12px;
+  font-weight: 500;
+  color: #aeac78;
+  width: 40px;
+  position: absolute;
+  text-align: center;
+}
+.app-bar button {
+  height: calc(40px - 6px);
+  padding: 0 12px;
+  background-color: #aeac78;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: calc((40px - 6px) / 2);
+}
+.app-bar button:hover {
+  opacity: 0.8;
+}
+/* ===== APP BAR END ===== */
